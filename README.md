@@ -99,6 +99,14 @@ GET /axcelerate/enrolments/12345
 
 The service is configured for deployment on Render. The `render.yaml` file contains the deployment configuration.
 
+### Render Settings
+
+When deploying on Render, add the following command to the "Start Command" setting:
+
+```
+gunicorn wsgi:app --timeout 240
+```
+
 ## Error Handling
 
 All endpoints return JSON responses with appropriate HTTP status codes:
