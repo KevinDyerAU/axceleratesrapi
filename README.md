@@ -1,8 +1,25 @@
 # Axcelerate API Webhook Service
 
-A Flask-based webhook service that provides integration with the Axcelerate API for student management and assessment tracking.
+## About Axcelerate
+
+Axcelerate is a best-in-class training management software platform designed for vocational and enterprise training organizations. It provides a comprehensive solution for managing the entire training lifecycle, from student onboarding to assessment and compliance management. The platform is built to meet Australian compliance requirements and supports custom competency frameworks.
+
+Axcelerate serves various training sectors including:
+- Private Registered Training Organisations (RTOs)
+- Technical and Further Education (TAFE) institutions
+- Government training agencies
+- Enterprise training programs
+
+The platform offers integrated solutions for:
+- Student management
+- Learning management
+- Work-based learning
+- Compliance management
+- Assessment tracking
 
 ## Overview
+
+This service acts as a webhook endpoint for interacting with the Axcelerate API, providing functionality for:
 
 This service acts as a webhook endpoint for interacting with the Axcelerate API, providing functionality for:
 1. Searching for students
