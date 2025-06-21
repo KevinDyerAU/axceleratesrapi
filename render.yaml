@@ -1,0 +1,17 @@
+# Axcelerate API Webhook Service
+services:
+- type: web
+  name: axcelerate-api-webhook
+  runtime: python
+  repo: https://github.com/KevinDyerAU/axcelerateapi
+  plan: starter
+  region: singapore
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn main:app --timeout 240
+  env:
+    - key: AXCELERATE_WEB_SERVICE_TOKEN
+      value: $AXCELERATE_WEB_SERVICE_TOKEN
+    - key: AXCELERATE_API_TOKEN
+      value: $AXCELERATE_API_TOKEN
+  autoDeploy: true
+version: "1"
