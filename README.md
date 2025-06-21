@@ -95,6 +95,14 @@ Retrieve all enrolments for a student:
 GET /axcelerate/enrolments/12345
 ```
 
+## Local Development
+
+The Flask application runs on port 80 by default. Since port 80 requires administrative privileges, you may want to change the port number when running locally. You can modify the port in `main.py` or use the `PORT` environment variable:
+
+```bash
+PORT=5000 python main.py
+```
+
 ## Deployment
 
 The service is configured for deployment on Render. The `render.yaml` file contains the deployment configuration.
