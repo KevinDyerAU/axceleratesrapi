@@ -9,6 +9,6 @@ requests==2.31.0
 pydantic-settings==2.6.0
 python-dotenv==1.0.0
 
-logging==0.5.1.2
+logging==0.4.9.6
 
 requests==2.31.0
